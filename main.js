@@ -23,7 +23,8 @@ function setup(){
         .attr('cy', row => row.y)
         .attr('cx', row => row.x)
         .attr('r', row => row.h);
-    return svg.node();
+    // return svg.node();
+    div.node().appendChild(svg.node())
 }
 
         
